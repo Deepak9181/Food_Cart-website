@@ -1,0 +1,112 @@
+.logo {
+  width: 100px;
+  margin-top: 12px;
+}
+
+.container-logo {
+  margin-right: 22%;
+  padding-left: 2%;
+}
+
+.header {
+  border: 1px solid #000;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.nav-items > ul {
+  font-family: system-ui;
+  font-size: 28px;
+  font-weight: 400;
+  list-style: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 25px;
+}
+
+.nav-items > ul > li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.food-card > a {
+  text-decoration: none;
+}
+
+.food-photo {
+  border-radius: 20px;
+  width: 220px;
+  height: 180px;
+}
+
+.body-conatiner {
+  margin: 20px;
+  padding: 30px;
+}
+
+.food-card {
+  flex-wrap: wrap;
+  margin-top: 20px;
+  display: flex;
+}
+
+.food {
+  background-color: #26303005;
+  border-radius: 20px;
+  width: 260px;
+  margin: 10px;
+}
+
+.food:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 5px #a3a2a2;
+}
+
+.food-content {
+  color: #02060cbf;
+  padding: 20px;
+  font-family: "system-ui";
+  font-weight: bold;
+}
+
+.filter-btn {
+  margin: 0 15px;
+  font-size: medium;
+}
+
+.shrimmer-con {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shrimmer-card {
+  background-color: #e7e1e1;
+  border-radius: 20px;
+  width: 260px;
+  height: 450px;
+  margin: 50px 10px 10px;
+}
+
+.body-upper {
+  display: flex;
+}
+
+.search-bar {
+  margin: 0 2px;
+  font-size: medium;
+}
+
+.search-btn {
+  margin: 0 6px;
+  font-size: medium;
+}
+
+.user-card {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=index.75a90472.css.map */
