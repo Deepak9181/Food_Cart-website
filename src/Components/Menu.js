@@ -12,18 +12,16 @@ const Menu = () => {
 
   const resInfo = useMenuData(id);
 
-  //  console.log(resInfo)
+   console.log(resInfo)
   //  console.log(resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR);
 
   if (resInfo === null) return <Shrimmer />;
 
-  const { name, cuisines, locality } =
-    resInfo?.data?.cards[0]?.card?.card?.info;
-
+  const { name, cuisines, locality } =resInfo?.data?.cards[2]?.card?.card?.info;
   // console.log(resInfo);
 
-  let { cards } = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR
-    ? resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR
+  let { cards } = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR
+    ? resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR
     : resInfo?.data?.cards[0]?.groupedCard?.cardGroupMap?.REGULAR;
 
   // console.log(cards);

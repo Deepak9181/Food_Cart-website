@@ -619,16 +619,16 @@ const Menu = ()=>{
     const [expand, setexpand] = (0, _react.useState)(null);
     const { id } = (0, _reactRouterDom.useParams)();
     const resInfo = (0, _useMenuDataDefault.default)(id);
-    //  console.log(resInfo)
+    console.log(resInfo);
     //  console.log(resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR);
     if (resInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shrimmerDefault.default), {}, void 0, false, {
         fileName: "src/Components/Menu.js",
         lineNumber: 18,
         columnNumber: 32
     }, undefined);
-    const { name, cuisines, locality } = resInfo?.data?.cards[0]?.card?.card?.info;
+    const { name, cuisines, locality } = resInfo?.data?.cards[2]?.card?.card?.info;
     // console.log(resInfo);
-    let { cards } = resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR ? resInfo?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR : resInfo?.data?.cards[0]?.groupedCard?.cardGroupMap?.REGULAR;
+    let { cards } = resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR ? resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR : resInfo?.data?.cards[0]?.groupedCard?.cardGroupMap?.REGULAR;
     // console.log(cards);
     const Menulist = cards.filter((c)=>c?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
     //  console.log(Menulist);
@@ -640,7 +640,7 @@ const Menu = ()=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/Components/Menu.js",
-                lineNumber: 41,
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -652,7 +652,7 @@ const Menu = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Menu.js",
-                lineNumber: 42,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             Menulist.map((menu, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _accordianMenuDefault.default), {
@@ -661,13 +661,13 @@ const Menu = ()=>{
                     setexpand: ()=>setexpand(index)
                 }, menu?.card?.card?.title, false, {
                     fileName: "src/Components/Menu.js",
-                    lineNumber: 47,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/Components/Menu.js",
-        lineNumber: 40,
+        lineNumber: 38,
         columnNumber: 5
     }, undefined);
 };
@@ -687,7 +687,7 @@ $RefreshReg$(_c, "Menu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shrimmer":"58X1g","react-router-dom":"9xmpe","../utilis/useMenuData":"jPBmU","./AccordianMenu":"brd1l","react":"21dqq"}],"jPBmU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Shrimmer":"58X1g","react-router-dom":"9xmpe","../utilis/useMenuData":"jPBmU","./AccordianMenu":"brd1l","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jPBmU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$6faf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

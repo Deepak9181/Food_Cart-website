@@ -49,7 +49,7 @@ const Body = () => {
   const online = useOnlineStatus();
 
   if (online === false) {
-    return <h1>You are offline...</h1>;
+    return <h1 className="text-xl font-bold m-2 text-center">You are offline...</h1>;
   }
 
   if (Restuarantlist.length === 0) {

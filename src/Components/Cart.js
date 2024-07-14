@@ -1,16 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
 import AccordianDetails from "./AccordianDetails";
 import { clearCart, removeItem } from "../utilis/cartSlice";
-
+import useOnlineStatus from "../utilis/useOnlinestatus";
 const Cart =()=>{
 
     const cart = useSelector((store)=>store.cart.items);
     console.log(cart)
-
+    const online =useOnlineStatus();
     let total=0;
 
     cart.forEach((ele)=>{
-        total=total+ele?.card?.info?.price;
+        total=total+ele?.card?.info?.price ? total+ele?.card?.info?.price :ele?.card?.info?.defaultPrice;
     })
 
     // console.log(total/100);

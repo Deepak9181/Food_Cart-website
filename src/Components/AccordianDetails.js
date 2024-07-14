@@ -1,4 +1,3 @@
-import { useScrollTrigger } from "@mui/material";
 import { MENU_IMG } from "../utilis/contsant";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../utilis/cartSlice";
@@ -8,10 +7,9 @@ const AccordianDetails = ({ items ,showbutton}) => {
   const dispatch = useDispatch();
  
   const handleClick=(item)=>{
-      dispatch(addItem(item))
-      
+      dispatch(addItem(item));
   }
-  // console.log(items);
+  console.log(items);
   return (
     <div className=" mx-2">
       {items.map((item) => (
@@ -25,7 +23,7 @@ const AccordianDetails = ({ items ,showbutton}) => {
               Rs.
               {item?.card?.info?.price
                 ? item?.card?.info?.price / 100
-                : item?.card?.info?.defaultprice / 100}
+                : item?.card?.info?.defaultPrice / 100}
             </div>
             <div className="description  pr-4 mb-6">
               {item?.card?.info?.description}
